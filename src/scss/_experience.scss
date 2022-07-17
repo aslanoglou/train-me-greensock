@@ -1,0 +1,66 @@
+@keyframes experience-main-title {
+  0%   {transform: translateX(0)}
+  100% {transform: translateX(-2000px)}
+}
+.experience{
+  padding: 100px 17px 70px;
+  min-height: 100%;
+  position: relative;
+  @include media-breakpoint-up(lg){
+    padding: 137px 17px 70px;
+  }
+  &__main-title{
+    background: -webkit-linear-gradient(45deg, $trainme-purple1 0%, $trainme-blue3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 4px transparent;
+    color: $white;
+    position: absolute;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 5.0625rem  /* 81/16 */;
+    line-height: 1.2;
+    top: 30px;
+    left: 0px;
+    white-space: nowrap;
+    animation-name: experience-main-title;
+    animation-timing-function: linear;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    @include media-breakpoint-up(lg){
+      font-size: 7.5rem  /* 120/16 */;
+    }
+  }
+  &__figure{
+    z-index: 1;
+    background-size: cover;
+    background-position: right -20vw center;
+    border-radius: 40px;
+    flex: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color:$trainme-green1;
+    font-size: 1.1875rem  /* 19/16 */;
+    padding: 0 1.5rem 60px 1.5rem;
+    justify-content: flex-end;
+    @include media-breakpoint-up(lg){
+      font-size: 1.5rem  /* 24/16 */;
+      padding: 0 0 127px 76px;
+      align-items: flex-start;
+      background-position: center center;
+    }
+    &__title{
+      font-size: 54px;
+      color: $white;
+      margin-bottom: 2rem;
+      @include media-breakpoint-up(lg){
+        font-size: 81px;
+        text-align: left;
+        max-width: 600px;
+      }
+      @include media-breakpoint-only(xs){
+        font-size: 40px;
+      }
+    }
+  }
+}

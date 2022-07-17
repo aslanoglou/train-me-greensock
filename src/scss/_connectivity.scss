@@ -1,0 +1,26 @@
+.connectivity{
+  padding: .75rem;
+  text-align: left;
+  color: $trainme-grey2;
+  font-size: 16px;
+  @include media-breakpoint-up(md) {
+    font-size: 19px;
+  }
+  &__content{
+    border-radius: 40px;
+    background-color: rgba($trainme-grey3, .12);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+  &__main-title{
+    color: $trainme-blue2;
+    font-size: 36px;
+    @include media-breakpoint-up(md){
+      font-size: 54px;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.contact-page{
+  &__intro{
+    position: relative;
+    &__title{
+    position: absolute;
+      transform: translateY(10vw);
+      z-index: 1;
+      margin-left: 10vw;
+      color: $white;
+      @include media-breakpoint-up(xxl){
+        transform: translateY(150px);
+        margin-left: 160px;
+        font-size: 81px;
+      }
+      @include media-breakpoint-down(md){
+        margin-left: 1rem;
+      }
+    }
+  }
+  &__form{
+    max-width: 735px;
+    background-color: $white;
+    border-radius: 30px;
+    margin-top: -10vw;
+    margin-bottom: 130px;
+    position: relative;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px 1rem;
+    @include media-breakpoint-up(xxl){
+      margin-top: -150px;
+      padding: 56px 1rem
+    }
+    @include media-breakpoint-down(md){
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+    form{
+      max-width: 404px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    textarea.form-control{
+      min-height: calc(1.5em + 6.6875rem + 2px);
+    }
+  }
+}

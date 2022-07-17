@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="dist/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/images/favicon/favicon-16x16.png">
+    <!--    <link rel="manifest" href="dist/images/favicon/site.webmanifest">-->
+    <link rel="mask-icon" href="dist/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="dist/images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="dist/images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="dist/css/main.css" rel="stylesheet">
+    <title>Trainme</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-light navbar-expand-lg">
+        <div class="container-xxl">
+            <a class="navbar-brand" href="index.html"><img src="dist/images/logo-color.svg" alt="Train.me" width="195"
+                                                           height="46"></a>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+<!--                    <li class="nav-item d-md-none">-->
+<!--                        <a class="nav-link" aria-current="page" href="">Login</a>-->
+<!--                    </li>-->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="equipment.html">Equipment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="application.html">Application</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="workout.html">Workouts</a>
+                    </li>
+                </ul>
+                <div class="container navbar__mobile-content">
+                    <nav>
+<!--                        <a href="">Support</a>-->
+<!--                        <a href="">About us</a>-->
+                        <a href="contact.html">Contact us</a>
+                    </nav>
+                    <nav class="navbar__mobile-content__share my-4">
+                        <a href="https://www.facebook.com/trainme.club/" target="_blank" class="icon-facebook"></a>
+                        <a href="https://www.instagram.com/trainme.club/" target="_blank" class="icon-instagram"></a>
+                        <a href="https://www.linkedin.com/company/trainmeclub/" target="_blank" class="icon-linkedin"></a>
+                    </nav>
+                    <p class="footer__copyrights text-center text-lg-end">© 2022 trainme.club</p>
+                </div>
+            </div>
+            <div class="d-flex align-items-center">
+<!--                <a href="" class="d-none d-md-inline-flex link&#45;&#45;green">Login</a>-->
+<!--                <a href="" class="btn btn&#45;&#45;green ms-md-2 me-2 me-lg-0">Buy Trainme</a>-->
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<div class="gear-page swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+
+        <div class="swiper-slide gear-intro invisible">
+            <div class="gear-intro__content" style="background-image: url('dist/images/gear-page-slide-1-1.jpg')">
+                <div class="container">
+                    <h1 class="gear-intro__main-title">Sleek and smart</h1>
+                    <p class="max-width-760">No matter where you are or what you wear, Trainme will always blend in!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide gear-full-workout">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-12 col-md-5 gear-full-workout__text-area">
+                        <h2 class="gear-full-workout__main-title">A complete workout solution</h2>
+                        <p>Ready to make exercise a regular habit? Just connect the grips and bands to each other and enjoy effective workouts, tailor-made to your needs, that will help you build consistency. </p>
+                    </div>
+                    <div class="col-5 col-md-7 gear-full-workout__images-area">
+                        <figure>
+<!--                            <img src="dist/images/gear-page-slide-2-1.jpg" class="gear-full-workout__images-area__image1">-->
+                            <img src="dist/images/gear-page-slide-2-2.png" class="gear-full-workout__images-area__image2">
+                            <img src="dist/images/gear-page-slide-2-3.png" class="gear-full-workout__images-area__image3 invisible">
+                            <img src="dist/images/gear-page-slide-2-4.png" class="gear-full-workout__images-area__image4 invisible">
+                            <img src="dist/images/gear-page-slide-2-5.png" class="gear-full-workout__images-area__image5 invisible">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide gear-hardware invisible">
+            <div class="gear-hardware__content" style="background-image: url('dist/images/gear-page-slide-3-1.png')">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-7 col-xl-5">
+                            <h1 class="gear-hardware__main-title">Innovative hardware containing smart sensors</h1>
+                            <p>Measure your heart rate, using any heart rate monitor (compatible with Apple Health or Google Fit), and track your cardio fitness, number, speed and force of repetitions, calories burnt, as well as your overall workout performance. Take it all under your control!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide portability">
+            <div class="portability__content">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-6 portability__text-area">
+                            <h1 class="portability__main-title text-gradient">Portability</h1>
+                            <p>Enjoy your workout anytime, anywhere! Take Trainme with you wherever you go and you will no longer be dependent on location or time. Go for your favorite fitness class, even from the edge of the world!</p>
+                        </div>
+                        <div class="col-12 col-lg-6 portability__image-area">
+                            <img src="dist/images/gear-page-slide-4-1.png">
+                            <span class="portability__image-area__shadow"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide gear-real-time">
+            <h2 class="gear-real-time__main-title">Real-time workout feedback Real-time workout feedback</h2>
+            <div class="gear-real-time__slider-area">
+                <div class="gear-real-time__slider swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="row">
+                                <div class="col-12 col-md-6 gear-real-time__slider__text-area gear-real-time__slider__text-area--text1 invisible">
+                                    <h2>Sensors detect your movement </h2>
+                                    <div class="d-md-block">
+                                        <h3>Sensors</h3>
+                                        <ul>
+                                            <li>
+                                                <h4>Accelerometer</h4>
+                                                <i class="d-none d-md-block">(sensing speed and acceleration)</i>
+                                            </li>
+                                            <li>
+                                                <h4>Gyroscope</h4>
+                                                <i class="d-none d-md-block">(sensing position in space)</i>
+                                            </li>
+                                            <li>
+                                                <h4>Force sensor</h4>
+                                                <i class="d-none d-md-block">(measuring force pressure/weight)</i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 gear-real-time__slider__figure-area gear-real-time__slider__figure-area--figure1 invisible">
+                                    <figure>
+                                        <img src="dist/images/home-page-slide-3-1.png">
+                                        <div class="circles">
+                                            <span class="animate__animated animate__pulse animate__infinite animate__fast"></span>
+                                            <span class="animate__animated animate__pulse animate__infinite animate__fast"></span>
+                                            <span class="animate__animated animate__pulse animate__infinite animate__fast"></span>
+                                            <span class="animate__animated animate__pulse animate__infinite animate__fast"></span>
+                                        </div>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide flex-nowrap">
+                            <div class="row">
+                                <div class="col-12 col-md-6 gear-real-time__slider__figure-area gear-real-time__slider__figure-area--figure2 invisible">
+                                    <figure>
+                                        <img src="dist/images/home-page-slide-3-1.png">
+                                        <div class="circles">
+                                            <span class="animate__animated animate__pulse animate__infinite animate__fast"></span>
+                                            <span class="animate__animated animate__pulse animate__infinite animate__fast"></span>
+                                            <span class="animate__animated animate__pulse animate__infinite animate__fast"></span>
+                                            <span class="animate__animated animate__pulse animate__infinite animate__fast"></span>
+                                        </div>
+                                    </figure>
+                                </div>
+                                <div class="col-12 col-md-6 gear-real-time__slider__text-area gear-real-time__slider__text-area--text2 invisible">
+                                    <h2>and provide you with valuable metrics</h2>
+                                    <div class="d-md-block">
+                                        <h3>Metrics</h3>
+                                        <ul>
+                                            <li>
+                                                <h4>Number, speed & force of reps</h4>
+                                            </li>
+                                            <li>
+                                                <h4>Calories</h4>
+                                            </li>
+                                            <li>
+                                                <h4>Leaderboard position</h4>
+                                            </li>
+                                            <li>
+                                                <h4>Heart rate (via 3rd party devices)</h4>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide technical-specifications">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <h2 class="technical-specifications__main-title">Technical Specifications</h2>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <strong>Dimensions</strong>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <p>Grips: 190x74x56mm (each)</p>
+                                    <p>Charging case: 280x182x82mm</p>
+                                    <p>Bands: 2250x38x17mm (each)</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <strong>Full Case Weight</strong>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <p>Grips: 1kg (each), 2kg (in total)</p>
+                                    <p>Full case weight: 3.5kg</p>
+                                    <p>Pouch with bands: 0.3kg</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <strong>Warranties</strong>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <p>2-year limited warranty. This warranty does not cover any use of the product that is contrary to the use usually expected of the product.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <strong>Materials</strong>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <p>Aluminium</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <strong>Battery Life</strong>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <p>Up to 4.5 hours of working out time.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide connectivity">
+            <div class="connectivity__content">
+                <div class="container container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-6">
+                            <img src="dist/images/gear-page-slide-6-1.png">
+                        </div>
+                        <div class="col-12 col-md-5 offset-md-1">
+                            <h2 class="connectivity__main-title">Connectivity</h2>
+                            <p>Connect Trainme from your mobile to any smart screen you want. Our classes are compatible with any mobile phone or tablet. Mirror your mobile or tablet to any smart TV wirelessly and get training!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--        <div class="swiper-slide gear-options">-->
+<!--            <div class="container container-fluid">-->
+<!--                <h2 class="gear-options__main-title">If you want to get the big experience, here are your options below:</h2>-->
+<!--                <div class="row align-items-center">-->
+<!--                    <div class="col-12 col-md-4">-->
+<!--                        <figure>-->
+<!--                            <img src="dist/images/gear-page-slide-7-1.png">-->
+<!--                            <figcaption>APPLE TV</figcaption>-->
+<!--                        </figure>-->
+<!--                        <p>Mirror your web browser screen directly to your TV using Apple TV and a wireless connection</p>-->
+<!--                    </div>-->
+<!--                    <div class="col-12 col-md-4">-->
+<!--                        <figure>-->
+<!--                            <img src="dist/images/gear-page-slide-7-2.png">-->
+<!--                            <figcaption>WIRED CONNECTION</figcaption>-->
+<!--                        </figure>-->
+<!--                        <p>Connect your Iphone/Laptop/Tablet to your TV that has a HDMI port, using a lighting to HD cable adapter</p>-->
+<!--                    </div>-->
+<!--                    <div class="col-12 col-md-4">-->
+<!--                        <figure>-->
+<!--                            <img src="dist/images/gear-page-slide-7-3.png">-->
+<!--                            <figcaption>AIRPLAY</figcaption>-->
+<!--                        </figure>-->
+<!--                        <p>If your smart TV has airplay, simply mirror your web browsing screen wirelessly and get training!</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+        <div class="swiper-slide radius-box-with-text">
+            <div class="radius-box-with-text__figure" style="background-image: url('dist/images/workout-page-slide-8-1.png')">
+                <h4 class="radius-box-with-text__figure__title">Get ready to live the experience</h4>
+                <div class="d-flex radius-box-with-text__btns-area">
+<!--                    <a href="" class="btn btn&#45;&#45;white d-flex align-items-center">Explore our offering<span class="icon-chevron-right ms-2"></span></a>-->
+                    <a href="application.html" class="btn btn--green d-flex align-items-center">Learn more<span class="icon-chevron-right ms-2"></span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide footer">
+            <div class="container">
+                <div class="footer__first-row">
+                    <a href="index.html" class="footer__first-row__logo"><img src="dist/images/logo-white.svg" alt=""></a>
+                    <nav>
+<!--                        <a href="">Support</a>-->
+<!--                        <a href="">About us</a>-->
+                        <a href="contact.html">Contact us</a>
+                    </nav>
+                </div>
+                <div class="footer__sec-row d-flex flex-lg-row flex-column align-items-center justify-content-lg-between">
+                    <div class="d-flex flex-column align-items-center align-items-lg-start order-1 order-lg-0">
+<!--                        <p class="mb-2">Get the app</p>-->
+<!--                        <div class="d-flex align-items-center">-->
+<!--                            <a href="" class="me-2"><img src="dist/images/google-play-badge.svg" alt=""></a>-->
+<!--                            <a href=""><img src="dist/images/app_store_badge.svg" alt></a>-->
+<!--                        </div>-->
+                    </div>
+                    <nav>
+                        <p class="text-lg-start mb-2 d-lg-none">Follow Us</p>
+                        <a href="https://www.facebook.com/trainme.club/" target="_blank" class="icon-facebook"></a>
+                        <a href="https://www.instagram.com/trainme.club/" target="_blank" class="icon-instagram"></a>
+                        <a href="https://www.linkedin.com/company/trainmeclub/" target="_blank" class="icon-linkedin"></a>
+                    </nav>
+                </div>
+                <p class="footer__copyrights text-center text-lg-end">© 2022 trainme.club</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Optional JavaScript; choose one of the two! -->
+
+
+<script async src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+<script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+<script async src="dist/js/main.js"></script>
+<script async src="dist/js/gear-page.js"></script>
+</body>
+</html>

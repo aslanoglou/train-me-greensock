@@ -1,0 +1,123 @@
+.gripped{
+  height: 100%;
+  overflow: hidden;
+  text-align: left;
+  @include media-breakpoint-down(sm){
+    //align-items: flex-start;
+  }
+  &__main-title{
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    line-height: 1.2;
+    font-size: 3.375rem  /* 54/16 */;
+    text-align: center;
+    padding-bottom: 1rem;
+    @include media-breakpoint-only(xs){
+      font-size: 2.875rem /* 110/16 */;
+      max-width: 320px;
+    }
+    @include media-breakpoint-up(sm) {
+      font-size: 4.875rem /* 110/16 */;
+      max-width: 528px;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 6.875rem /* 110/16 */;
+      max-width: 768px;
+    }
+  }
+  &__content{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    @include media-breakpoint-down(sm){
+      margin-top: 2rem;
+    }
+    & > img{
+
+      @include media-breakpoint-up(sm){
+        height: 80%;
+        width: auto;
+        max-width: unset;
+      }
+    }
+  }
+  &__metrics{
+    position: absolute;
+    margin-top: 2.5rem ;
+    left: 55%;
+    margin-left: -2rem;
+    z-index: -1;
+    width: 180px;
+    @include media-breakpoint-up(sm){
+      width: 280px;
+    }
+    &__item{
+      color: white;
+      font-size: 18px;
+      font-weight: 300;
+      border-radius: 100px;
+      display: flex;
+      align-items: center;
+      line-height: 1;
+      width: 100%;
+      //max-width: 50%;
+      padding: .65rem;
+      margin-bottom: 1rem;
+      @include media-breakpoint-up(sm){
+        font-size: 28px;
+      }
+      &:nth-child(1){
+        background-color: $green;
+      }
+      &:nth-child(2){
+        background-color: $yellow;
+      }
+      [class^=icon-]{
+        margin-left: .5rem;
+        margin-right: .5rem;
+        font-size: 32px;
+        @include media-breakpoint-up(sm){
+          font-size: 45px;
+        }
+      }
+      span:last-child{
+        margin-left: auto;
+        font-weight: 600;
+        font-size: 32px;
+        @include media-breakpoint-up(sm){
+          font-size: 50px;
+        }
+      }
+    }
+  }
+  &__plans{
+    &__item{
+      font-size: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @include media-breakpoint-up(lg){
+        font-size: 1.1875rem  /* 19/16 */;
+      }
+      a{
+        font-size: 1rem;
+        color: $green;
+        text-decoration: none;
+        @include transition();
+        &:hover{
+          color: $trainme-purple1;
+        }
+        span{
+          margin-left: .5rem;
+        }
+      }
+    }
+  }
+  .container{
+    @include media-breakpoint-up(lg){
+      width: 1320px;
+    }
+  }
+}

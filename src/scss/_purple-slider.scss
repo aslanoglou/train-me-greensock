@@ -1,0 +1,67 @@
+.purple-area{
+  //height: 100%;
+  padding: .75rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 40px;
+  background-color: $trainme-purple3;
+  min-height: 100%;
+  position: relative;
+
+  .btn--white{
+    position: absolute;
+    bottom: 5rem;
+    &:after{
+      content: "";
+      transition: ease-in-out all .3s;
+      margin-left: 1rem;
+      display: inline-block;
+      border-right: 1px solid currentColor;
+      border-bottom: 1px solid currentColor;
+      width: 8px;
+      height: 8px;
+      transform: rotate(-45deg);
+    }
+    &:hover{
+      &:after{
+        transform: rotate(-45deg) translateX(.5rem) translateY(.5rem);
+      }
+    }
+  }
+
+  &__section{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    transition: ease-in-out all .3s;
+    opacity: 0;
+    align-items: center;
+    @include media-breakpoint-up(lg){
+      background-size: auto;
+    }
+
+    .purple-area__title{
+      line-height: 1.2;
+      padding: 1rem;
+      color: $trainme-purple2;
+      font-weight: bold;
+      font-size: clamp(60px, 15vw, 200px);
+    }
+    &--section1{
+
+    }
+    &--section2 {
+      background-position: bottom right;
+    }
+    &--section3{
+      background-position: bottom center;
+    }
+    &.is-active{
+      opacity: 1;
+    }
+  }
+}

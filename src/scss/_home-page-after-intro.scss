@@ -1,0 +1,8 @@
+.home-page__after-intro-text{
+  @include media-breakpoint-down(lg){
+    height: 100%;
+  }
+  &__text-area{
+    opacity: 0;
+  }
+}

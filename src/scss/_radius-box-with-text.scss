@@ -1,0 +1,97 @@
+.radius-box-with-text {
+
+  position: relative;
+  @include media-breakpoint-down(sm){
+    min-height: 50%;
+    padding: 74px 17px;
+  }
+  @include media-breakpoint-up(sm) {
+    padding: 74px 17px;
+  }
+
+  &__figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 320px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    padding: 2rem;
+    @include media-breakpoint-up(lg){
+      min-height: 480px;
+    }
+
+    &__title {
+      color: $white;
+      //text-transform: uppercase;
+      max-width: 650px;
+      font-size: 2.25rem ;
+      padding: 0 1rem;
+      line-height: 1.2;
+      margin-bottom: 30px;
+      @include media-breakpoint-up(lg) {
+        font-size: 4.5rem  /* 81/16 */;
+        margin-bottom: 40px;
+      }
+    }
+
+  }
+  &__btns-area{
+    max-width: 650px;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 30px;
+      flex-direction: row;
+    }
+    .btn{
+      &:first-child{
+        @include media-breakpoint-down(lg){
+          margin-bottom: 20px;
+        }
+        @include media-breakpoint-up(lg) {
+          margin-right: 45px;
+        }
+      }
+    }
+
+  }
+  &__text-link{
+    color: $white;
+    @include transition();
+    &:hover{
+      color: $green;
+    }
+  }
+  &--background-left{
+    .radius-box-with-text__figure{
+      background-position: left center;
+    }
+  }
+  &--background-right{
+    .radius-box-with-text__figure{
+      background-position: right center;
+    }
+  }
+}
+
+.workout-page{
+  .radius-box-with-text__figure{
+    background-position: center right;
+    &__title{
+      max-width: 720px;
+    }
+  }
+}
+.gear-page{
+  .radius-box-with-text__figure{
+    background-position: center right;
+    &__title{
+      max-width: 640px;
+    }
+  }
+}

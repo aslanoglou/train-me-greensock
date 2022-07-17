@@ -1,0 +1,7 @@
+main{
+  position: relative;
+  padding-top: 58px;
+  @include media-breakpoint-up(sm){
+    padding-top: 72px;
+  }
+}

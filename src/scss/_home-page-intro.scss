@@ -1,0 +1,32 @@
+.home-page-intro{
+  min-height: calc(100% - 96px);
+  background-image: url('../images/home-page-intro.png');
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  .container{
+    max-width: 960px;
+    margin-bottom: 96px;
+  }
+  &__main-title{
+    text-align: center;
+    color: $white;
+    font-weight: bold;
+
+    font-size: 3.375rem  /* 54/16 */;
+    line-height: 4.0625rem  /* 65/16 */;
+    @include media-breakpoint-up(lg){
+      font-size: 5.0625rem  /* 81/16 */;
+      line-height: 6.0625rem  /* 97/16 */;
+    }
+  }
+  &:after{
+    content: "";
+    width: 2px;
+    height: 140px;
+    background-color: $green;
+    position: absolute;
+    bottom: -70px;
+    left: calc(50% - 1px);
+  }
+}

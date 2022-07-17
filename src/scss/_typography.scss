@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'trainme';
+  src:  url(../fonts/trainme.eot?edcdo9);
+  src:  url(../fonts/trainme.eot?edcdo9#iefix) format('embedded-opentype'),
+  url(../fonts/trainme.ttf?edcdo9) format('truetype'),
+  url(../fonts/trainme.woff?edcdo9) format('woff'),
+  url(../fonts/trainme.svg?edcdo9#trainme) format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'trainme', serif !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-check:before {
+  content: "\e908";
+}
+.icon-leaderboard:before {
+  content: "\e907";
+}
+.icon-facebook:before {
+  content: "\e903";
+}
+.icon-instagram:before {
+  content: "\e904";
+}
+.icon-linkedin:before {
+  content: "\e905";
+}
+.icon-twitter:before {
+  content: "\e906";
+}
+.icon-chevron-right:before {
+  content: "\e902";
+}
+.icon-flame:before {
+  content: "\e900";
+}
+.icon-heart:before {
+  content: "\e901";
+}
+
+
+h1,h2,h3,h4,h5,h6{
+  font-weight: 700;
+}
+h2{
+  font-size: 2.25rem  /* 36/16 */;
+  line-height: 3.375rem  /* 54/16 */;
+  @include media-breakpoint-up(lg){
+    font-size: 3.375rem  /* 54/16 */;
+    line-height: 4.0625rem  /* 65/16 */;
+  }
+
+}

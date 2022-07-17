@@ -1,0 +1,83 @@
+.gear-full-workout{
+  text-align: left;
+  min-height: 100%;
+  color: $trainme-blue2;
+  &__text-area{
+    font-size: 19px;
+    @include media-breakpoint-down(sm){
+      font-size: 16px;
+      line-height: 1.2;
+    }
+  }
+  &__main-title{
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    @include media-breakpoint-down(sm){
+      font-size: 24px;
+    }
+  }
+  &__images-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    figure{
+      position: relative;
+      .gear-full-workout__images-area__image2{
+        //position: absolute;
+        //top:0;
+        //left: 0;
+        //width: 100%;
+        //height: 100%;
+        //z-index: 2;
+        //transition: ease-in-out all .5s;
+      }
+      .gear-full-workout__images-area__image3{
+        top: 0;
+        left: 0;
+        position: absolute;
+        transform: translateX(-100px) translateY(-100px);
+        transition: ease-in-out all .5s;
+        //border-radius: 40px;
+        &.invisible{
+          transform: translateX(0) translateY(0);
+        }
+      }
+      .gear-full-workout__images-area__image4{
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        transform: translateX(-100px) translateY(100px);
+        transition: ease-in-out all .5s;
+        //border-radius: 40px;
+        @include media-breakpoint-up(md){
+          transform: translateX(-200px) translateY(150px);
+        }
+        &.invisible{
+          transform: translateX(0) translateY(0);
+          @include media-breakpoint-up(md){
+
+          }
+        }
+      }
+      .gear-full-workout__images-area__image5{
+        bottom: 1rem;
+        right: 0;
+        position: absolute;
+        transform: translateX(100px);
+        transition: ease-in-out all .5s;
+        //border-radius: 40px;
+        @include media-breakpoint-up(md){
+          transform: translateX(180px);
+        }
+        &.invisible{
+          transform: translateX(0);
+          @include media-breakpoint-up(md){
+
+          }
+        }
+      }
+    }
+  }
+}

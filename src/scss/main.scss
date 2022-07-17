@@ -1,0 +1,118 @@
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../../node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+$font-family-base:  'Poppins', sans-serif;
+$primary: #401EAE;
+$green: #00FFC2;
+$yellow: #FFC800;
+$white: #FFFFFF;
+$black: #000000;
+$trainme-blue1: #222244;
+$trainme-blue2: #2C2C58;
+$trainme-blue3: #99CCFF;
+$trainme-blue4:#1A1A2D;
+$trainme-green1:#70FFDD;
+$trainme-purple1: #401EAE;
+$trainme-purple2: #8162E4;
+$trainme-purple3:#d1c8ed;
+$trainme-purple4:#ede9f8;
+$trainme-purple5:#4D24D1;
+$trainme-purple6:#6C48E0;
+$trainme-purple7:#ECE7FF;
+$trainme-grey1:#C4C4C4;
+$trainme-grey2:#767688;
+$trainme-grey3:#C8C8D0;
+$trainme-grey4: #A8A8B3;
+
+
+$navbar-dark-color: rgba($white, 1);
+$btn-border-radius:           19px;
+$btn-border-radius-sm:        19px;
+$btn-border-radius-lg:        19px;
+
+$navbar-dark-color:                 $white;
+$navbar-dark-hover-color:           rgba($white, .75);
+$navbar-dark-active-color:          $white;
+$navbar-dark-disabled-color:        rgba($white, .25);
+
+$navbar-light-color:                $black;
+$navbar-light-hover-color:          rgba($black, .7);
+$navbar-light-active-color:         $black;
+$navbar-light-disabled-color:       rgba($black, .3);
+
+$input-border-radius: 8px;
+$input-padding-y: .938rem;
+$input-border-color:$trainme-grey3;
+$input-placeholder-color: $trainme-grey4;
+$input-font-size: 12px;
+$form-label-font-size: 12px;
+
+
+  // 3. Include remainder of required Bootstrap stylesheets
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/root";
+
+// 4. Include any optional Bootstrap CSS as needed
+@import "../../node_modules/bootstrap/scss/utilities";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/helpers";
+@import "../../node_modules/bootstrap/scss/navbar";
+@import "../../node_modules/bootstrap/scss/transitions";
+@import "../../node_modules/bootstrap/scss/buttons";
+@import "../../node_modules/bootstrap/scss/forms";
+
+
+// 5. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "../../node_modules/bootstrap/scss/utilities/api";
+
+// 6. Add additional custom code here
+@import "typography";
+@import "helper";
+@import "header";
+@import "main-tag";
+//home-page
+@import "intro";
+@import "home-page-after-intro";
+@import "purple-slider";
+@import "sensors-slider";
+@import "gripped";
+@import "experience";
+@import "iphone";
+@import "telephone-slider";
+@import "radius-box-with-text";
+//application-page
+@import "application-intro";
+@import "application-metrics";
+@import "screen-feedbacks";
+@import "radius-box-with-text";
+@import "workout-friends";
+@import "good-reasons";
+@import "radius-box-with-text";
+//workout-page
+@import "workout-intro";
+@import "classes";
+@import "exersices";
+@import "trainers";
+@import "schedule";
+@import "goals";
+//gear page
+@import "gear-intro";
+@import "gear-full-workout";
+@import "gear-hardware";
+@import "portability";
+@import "gear-real-time";
+@import "technical-specifications";
+@import "connectivity";
+@import "gear-options";
+@import "contact";
+
+@import "footer";
+
+@import "~animate.css";
+@import "~swiper/swiper-bundle.min.css";

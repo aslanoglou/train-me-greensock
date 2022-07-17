@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="dist/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/images/favicon/favicon-16x16.png">
+<!--    <link rel="manifest" href="dist/images/favicon/site.webmanifest">-->
+    <link rel="mask-icon" href="dist/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="dist/images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="dist/images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link  href="dist/css/main.css" rel="stylesheet">
+    <title>Trainme</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-light navbar-expand-lg">
+        <div class="container-xxl">
+            <a class="navbar-brand" href="index.html"><img src="dist/images/logo-color.svg" alt="Train.me" width="195" height="46"></a>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+<!--                    <li class="nav-item d-md-none">-->
+<!--                        <a class="nav-link" aria-current="page" href="">Login</a>-->
+<!--                    </li>-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="equipment.html">Equipment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="application.html">Application</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="workout.html">Workouts</a>
+                    </li>
+                </ul>
+                <div class="container navbar__mobile-content">
+                    <nav>
+<!--                        <a href="">Support</a>-->
+<!--                        <a href="">About us</a>-->
+                        <a href="contact.html">Contact us</a>
+                    </nav>
+                    <nav class="navbar__mobile-content__share my-4">
+                        <a href="https://www.facebook.com/trainme.club/" target="_blank" class="icon-facebook"></a>
+                        <a href="https://www.instagram.com/trainme.club/" target="_blank" class="icon-instagram"></a>
+                        <a href="https://www.linkedin.com/company/trainmeclub/" target="_blank" class="icon-linkedin"></a>
+                    </nav>
+                    <p class="footer__copyrights text-center text-lg-end">© 2022 trainme.club</p>
+                </div>
+            </div>
+            <div class="d-flex align-items-center">
+<!--                <a href="" class="d-none d-md-inline-flex link&#45;&#45;green">Login</a>-->
+<!--                <a href="" class="btn btn&#45;&#45;green ms-md-2 me-2 me-lg-0">Buy Trainme</a>-->
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<div class="workout-page swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+
+        <div class="swiper-slide workout-intro">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-6 workout-intro__text-area">
+                        <h1 class="workout-intro__main-title text-gradient">The Trainme experience</h1>
+                        <p>Trainme offers guided workouts through a universe of on-demand & live classes, across a number of genres and levels!</p>
+                    </div>
+                    <div class="col-12 col-lg-6 position-relative workout-intro__image-area">
+                        <div class="workout-intro__gradient"></div>
+                        <img src="dist/images/workout-page-slide-1-1.png" class="workout-intro__image-1 invisible">
+                        <img src="dist/images/workout-page-slide-1-2.png" class="workout-intro__image-2 invisible">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide classes">
+            <div class="container d-flex flex-column flex-md-row align-items-center">
+                <div class="classes__photo-area">
+                    <figure style="background-image: url('dist/images/workout-page-slide-2-1.png')">
+<!--                        <img src="dist/images/workout-page-slide-2-1.png">-->
+                    </figure>
+                </div>
+                <div class="classes__boxes-area">
+                    <div class="classes__box-item">
+                        <h4 class="classes__box-item__title">100+ classes</h4>
+                        <p>across 5 disciplines</p>
+                    </div>
+                    <div class="classes__box-item">
+                        <h4 class="classes__box-item__title">10-60 minutes</h4>
+                        <p>duration</p>
+                    </div>
+                    <div class="classes__box-item">
+                        <h4 class="classes__box-item__title">New classes</h4>
+                        <p>every week</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container classes__text-area invisible">
+                <h2 class="classes__text-area__main-title text-gradient">Find your passion or explore new ways to get fit!</h2>
+                <p class="max-width-760 mx-auto">From cardio and Strength Training to boxing and yoga, with 10-minute sprints or full body workouts, browse through 100+ on-demand workouts, across 5 disciplines.</p>
+            </div>
+        </div>
+        <div class="swiper-slide screen-exercises">
+            <div class="screen-exercises__row1 swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url('dist/images/workout-page-slide-3-1.png')">
+                        <h4 class="main-title">Yoga</h4>
+                        <p>&nbsp;</p>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('dist/images/workout-page-slide-3-2.png')">
+                        <h4 class="main-title">Boxing</h4>
+                        <p>&nbsp;</p>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('dist/images/workout-page-slide-3-3.png')">
+                        <h4 class="main-title">Strength</h4>
+                        <p>&nbsp;</p>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('dist/images/workout-page-slide-3-4.png')">
+                        <h4 class="main-title">Core</h4>
+                        <p>20, 30 & 45 minutes</p>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('dist/images/workout-page-slide-3-8.png')">
+                        <h4 class="main-title">Cardio & HIIT</h4>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="screen-exercises__row2 swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url('dist/images/workout-page-slide-3-5.png')">
+                        <div class="purple-tag">Coming Soon</div>
+                        <h4 class="main-title">Barre</h4>
+                        <p>&nbsp;</p>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('dist/images/workout-page-slide-3-6.png')">
+                        <div class="purple-tag">Coming Soon</div>
+                        <h4 class="main-title">Running</h4>
+                        <p>&nbsp;</p>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('dist/images/workout-page-slide-3-7.png')">
+                        <div class="purple-tag">Coming Soon</div>
+                        <h4 class="main-title">Pilates</h4>
+                        <p>&nbsp;</p>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('dist/images/workout-page-slide-3-9.png')">
+                        <div class="purple-tag">Coming Soon</div>
+                        <h4 class="main-title">Flexibility</h4>
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide schedule">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-6 schedule__text-area">
+                        <h1 class="schedule__main-title">Schedule your workouts and stay on track</h1>
+                        <p>Add classes to your calendar to create your personal fitness schedule, exactly as you would in a gym, and stay on track. Invite your friends to work out with you and compete against each other for better results and added fun!</p>
+                    </div>
+                    <div class="col-12 col-lg-6 position-relative schedule__image-area">
+                        <img src="dist/images/workout-page-slide-4-1.png" class="schedule__image-area__image-1">
+                        <img src="dist/images/workout-page-slide-4-2.jpg" class="schedule__image-area__image-2">
+                        <img src="dist/images/workout-page-slide-4-3.jpg" class="schedule__image-area__image-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide goals">
+            <div class="goals__image-area">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-6 goals__text-area text-start">
+                        <h2 class="text-gradient goals__text-area__main-title">Set goals.
+                            Then smash them.</h2>
+                    </div>
+                    <div class="col-12 col-lg-6 pt-5">
+                        <img src="dist/images/workout-page-slide-5-1.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide telephone-slider-area telephone-slider-area--workout">
+            <div class="telephone-slider-area__shadow invisible"></div>
+            <div class="telephone-slider-area__get-app invisible">
+                <a href="https://comingsoon.co/products/trainme/" class="d-flex align-items-center">Get ready to live the experience   <span class="icon-chevron-right ms-2"></span></a>
+            </div>
+            <div class="iphone">
+                <img src="dist/images/home-page-slide-6-1.png"  alt="">
+                <div class="iphone__screens d-flex flex-column">
+                    <video muted autoplay playsinline loop id="video1" poster="dist/images/trainme_video_1_cover.jpg" class="video1">
+                        <source  src="dist/images/trainme_video_1.mp4" type="video/mp4">
+                        Your browser does not support HTML video.
+                    </video>
+                    <video muted autoplay playsinline loop id="video2" poster="dist/images/trainme_video_2_cover.png" class="video2">
+                        <source  src="dist/images/trainme_video_2.mp4" type="video/mp4">
+                        Your browser does not support HTML video.
+                    </video>
+                </div>
+            </div>
+            <div class="telephone-slider telephone-slider--workout swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <h4 class="telephone-slider__text">
+                            Select your fitness level for cardio, strength and flexibility and set measurable goals.
+                        </h4>
+                    </div>
+                    <div class="swiper-slide">
+                        <h4 class="telephone-slider__text">
+                            Just take a Fitness Level Test and let the Trainme software assign you to the most suitable one.
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--        <div class="swiper-slide trainers">-->
+<!--            <h2 class="trainers__main-title text-gradient">Our trainers</h2>-->
+<!--            <div class="trainers-slider swiper-container">-->
+<!--                &lt;!&ndash; Additional required wrapper &ndash;&gt;-->
+<!--                <div class="swiper-wrapper">-->
+<!--                    <div class="swiper-slide">-->
+<!--                        <div class="trainers__item">-->
+<!--                            <div class="trainers__item__image-area" style="background-image: url('dist/images/workout-page-slide-7-1.jpg')">-->
+<!--                                <h4 class="trainers__item__name">-->
+<!--                                    Kelly Calvin-->
+<!--                                </h4>-->
+<!--                            </div>-->
+<!--                            <div class="trainers__item__text-area">-->
+<!--                                <div class="trainers__item__alt">-->
+<!--                                    @kellycalcin-->
+<!--                                </div>-->
+<!--                                <div class="trainers__item__tags-area">-->
+<!--                                    <div class="d-flex flex-wrap">-->
+<!--                                        <div class="trainers__item__tag">-->
+<!--                                            Cardio-->
+<!--                                        </div>-->
+<!--                                        <div class="trainers__item__tag">-->
+<!--                                            Full body-->
+<!--                                        </div>-->
+<!--                                        <div class="trainers__item__tag">-->
+<!--                                            Strenght-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div>-->
+<!--                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum natus provident rem repellat. Alias aliquid ducimus ex fuga vero? Accusantium aliquid distinctio doloremque dolores harum id ipsum iusto nisi recusandae.-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="swiper-slide">-->
+<!--                        <div class="trainers__item">-->
+<!--                            <div class="trainers__item__image-area" style="background-image: url('dist/images/workout-page-slide-7-2.jpg')">-->
+<!--                                <h4 class="trainers__item__name">-->
+<!--                                    Dustin Brown-->
+<!--                                </h4>-->
+<!--                            </div>-->
+<!--                            <div class="trainers__item__text-area">-->
+<!--                                <div class="trainers__item__alt">-->
+<!--                                    @dustybrown-->
+<!--                                </div>-->
+<!--                                <div class="trainers__item__tags-area">-->
+<!--                                    <div class="d-flex flex-wrap">-->
+<!--                                        <div class="trainers__item__tag">-->
+<!--                                            Cardio-->
+<!--                                        </div>-->
+<!--                                        <div class="trainers__item__tag">-->
+<!--                                            Full body-->
+<!--                                        </div>-->
+<!--                                        <div class="trainers__item__tag">-->
+<!--                                            Strenght-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div>-->
+<!--                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum natus provident rem repellat. Alias aliquid ducimus ex fuga vero? Accusantium aliquid distinctio doloremque dolores harum id ipsum iusto nisi recusandae.-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="swiper-slide">-->
+<!--                        <div class="trainers__item">-->
+<!--                            <div class="trainers__item__image-area" style="background-image: url('dist/images/workout-page-slide-7-3.jpg')">-->
+<!--                                <h4 class="trainers__item__name">-->
+<!--                                    Lucy Whiting-->
+<!--                                </h4>-->
+<!--                            </div>-->
+<!--                            <div class="trainers__item__text-area">-->
+<!--                                <div class="trainers__item__alt">-->
+<!--                                    @lucywhiting-->
+<!--                                </div>-->
+<!--                                <div class="trainers__item__tags-area">-->
+<!--                                    <div class="d-flex flex-wrap">-->
+<!--                                        <div class="trainers__item__tag">-->
+<!--                                            Cardio-->
+<!--                                        </div>-->
+<!--                                        <div class="trainers__item__tag">-->
+<!--                                            Full body-->
+<!--                                        </div>-->
+<!--                                        <div class="trainers__item__tag">-->
+<!--                                            Strenght-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div>-->
+<!--                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum natus provident rem repellat. Alias aliquid ducimus ex fuga vero? Accusantium aliquid distinctio doloremque dolores harum id ipsum iusto nisi recusandae.-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="swiper-slide">-->
+<!--                        <div class="trainers__item">-->
+<!--                            <div class="trainers__item__image-area" style="background-image: url('dist/images/workout-page-slide-7-1.png')">-->
+<!--                                <h4 class="trainers__item__name">-->
+<!--                                    Kelly Calvin-->
+<!--                                </h4>-->
+<!--                            </div>-->
+<!--                            <div class="trainers__item__text-area">-->
+<!--                                <div class="trainers__item__alt">-->
+<!--                                    @kellycalcin-->
+<!--                                </div>-->
+<!--                                <div class="trainers__item__tags-area">-->
+<!--                                    <div class="d-flex flex-wrap">-->
+<!--                                        <div class="trainers__item__tag">-->
+<!--                                            Cardio-->
+<!--                                        </div>-->
+<!--                                        <div class="trainers__item__tag">-->
+<!--                                            Full body-->
+<!--                                        </div>-->
+<!--                                        <div class="trainers__item__tag">-->
+<!--                                            Strenght-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div>-->
+<!--                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum natus provident rem repellat. Alias aliquid ducimus ex fuga vero? Accusantium aliquid distinctio doloremque dolores harum id ipsum iusto nisi recusandae.-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+        <div class="swiper-slide radius-box-with-text">
+            <div class="radius-box-with-text__figure" style="background-image: url('dist/images/workout-page-slide-8-1.png')">
+                <h4 class="radius-box-with-text__figure__title">Don’t miss out on our launch!</h4>
+                <div class="d-flex radius-box-with-text__btns-area">
+                    <a href="https://comingsoon.co/products/trainme/" class="btn btn--white d-flex align-items-center">Learn more<span class="icon-chevron-right ms-2"></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide footer">
+            <div class="container">
+                <div class="footer__first-row">
+                    <a href="index.html" class="footer__first-row__logo"><img src="dist/images/logo-white.svg" alt=""></a>
+                    <nav>
+<!--                        <a href="">Support</a>-->
+<!--                        <a href="">About us</a>-->
+                        <a href="contact.html">Contact us</a>
+                    </nav>
+                </div>
+                <div class="footer__sec-row d-flex flex-lg-row flex-column align-items-center justify-content-lg-between">
+                    <div class="d-flex flex-column align-items-center align-items-lg-start order-1 order-lg-0">
+<!--                        <p class="mb-2">Get the app</p>-->
+<!--                        <div class="d-flex align-items-center">-->
+<!--                            <a href="" class="me-2"><img src="dist/images/google-play-badge.svg" alt=""></a>-->
+<!--                            <a href=""><img src="dist/images/app_store_badge.svg" alt></a>-->
+<!--                        </div>-->
+                    </div>
+                    <nav>
+                        <p class="text-lg-start mb-2 d-lg-none">Follow Us</p>
+                        <a href="https://www.facebook.com/trainme.club/" target="_blank" class="icon-facebook"></a>
+                        <a href="https://www.instagram.com/trainme.club/" target="_blank" class="icon-instagram"></a>
+                        <a href="https://www.linkedin.com/company/trainmeclub/" target="_blank" class="icon-linkedin"></a>
+                    </nav>
+                </div>
+                <p class="footer__copyrights text-center text-lg-end">© 2022 trainme.club</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Optional JavaScript; choose one of the two! -->
+
+
+<script async src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script async src="dist/js/main.js"></script>
+<script async src="dist/js/workout-page.js"></script>
+</body>
+</html>

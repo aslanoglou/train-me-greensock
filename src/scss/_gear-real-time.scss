@@ -1,0 +1,218 @@
+@keyframes gear-real-time-main-title {
+  0%   {transform: translateX(0)}
+  100% {transform: translateX(-1960px)}
+}
+@keyframes text-disable {
+  0%   {margin-left: 0; opacity: 1}
+  100% {margin-left: -50%; opacity: 0;}
+}
+@keyframes text-enable {
+  0% {margin-left: -50%; opacity:0;}
+  100%   {margin-left: 0; opacity:1;}
+}
+.gear-real-time{
+  padding: 100px 17px 70px;
+  height: 100%;
+  position: relative;
+  @include media-breakpoint-up(lg){
+    padding: 137px 17px 70px;
+  }
+  &__main-title{
+    //background: -webkit-linear-gradient(45deg, $trainme-purple1 0%, $trainme-blue3 100%);
+    background: $trainme-purple1;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 4px transparent;
+    color: $white;
+    position: absolute;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 5.0625rem  /* 81/16 */;
+    line-height: 1.2;
+    top: 30px;
+    left: 0px;
+    white-space: nowrap;
+    @include media-breakpoint-up(lg){
+      font-size: 7.5rem  /* 120/16 */;
+    }
+    &--play{
+      animation-name: gear-real-time-main-title;
+      animation-timing-function: linear;
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+    }
+  }
+  &__slider-area{
+    z-index: 1;
+    background-color: $trainme-blue1;
+    border-radius: 40px;
+    width: 100%;
+    height: 100%;
+    color:$white;
+    font-size: 1.1875rem  /* 19/16 */;
+    padding: 0;
+    overflow: hidden;
+    &:before,
+    &:after{
+      content: "";
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      z-index: 5;
+      background: $trainme-purple2;
+      background: linear-gradient(139.4deg, rgba($trainme-blue3, 0.4) 18.34%, rgba($trainme-purple2, 0.4) 75.19%);
+      filter: blur(200px);
+    }
+    &:before{
+      top: -150px;
+      right: -150px;
+    }
+    &:after{
+      bottom: -150px;
+      left: -150px;
+    }
+    @include media-breakpoint-up(lg){
+      font-size: 1.5rem  /* 24/16 */;
+      align-items: flex-start;
+    }
+    &__title{
+      font-size: 54px;
+      color: $white;
+      margin-bottom: 2rem;
+      @include media-breakpoint-up(lg){
+        font-size: 81px;
+        text-align: left;
+        max-width: 600px;
+      }
+      @include media-breakpoint-only(xs){
+        font-size: 40px;
+      }
+    }
+  }
+  &__slider{
+    .swiper-slide{
+      opacity: 1!important;
+      background-color: transparent;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      padding: .75rem;
+      @include media-breakpoint-up(sm){
+        padding: 25px;
+      }
+      @include media-breakpoint-up(md){
+        padding: 50px;
+      }
+      @include media-breakpoint-up(lg){
+        padding: 75px;
+      }
+      @include media-breakpoint-up(xl){
+        padding: 100px;
+      }
+      .row{
+        flex: 0 0 100%;
+        width: 100%;
+        @include media-breakpoint-down(md){
+          align-items: flex-end;
+        }
+        .gear-real-time__slider__text-area{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          h2{
+            line-height: 1.2;
+            @include media-breakpoint-down(lg){
+              font-size: 1.3rem;
+            }
+          }
+          h3{
+            font-size: 1.5rem  /* 24/16 */;
+            @include media-breakpoint-down(lg){
+              font-size: 1.1rem;
+            }
+          }
+          ul{
+            position: relative;
+            padding-left: 3rem;
+            list-style: none;
+            li{
+              &:not(:last-child){
+                margin-bottom: 1rem;
+              }
+              &::marker{
+                content: none;
+              }
+              &:before {
+                content: "\e908"; /* FontAwesome Unicode */
+                font-family: 'trainme', serif;
+                color: $green;
+                line-height: 1;
+                font-size: 2rem;
+                position: absolute;
+                left: 0;
+              }
+              h4{
+                font-weight: normal;
+                margin-bottom: 0;
+                font-size: 1.1875rem  /* 19/16 */;
+                @include media-breakpoint-down(lg){
+                  font-size: 1rem;
+                }
+              }
+              i{
+                font-style: normal;
+                font-size: 0.875rem  /* 14/16 */;
+              }
+            }
+          }
+        }
+        .gear-real-time__slider__figure-area{
+          display: flex;
+          align-items: center;
+          position: relative;
+          &--figure2{
+            @include media-breakpoint-down(md){
+              order: 1;
+            }
+          }
+          .circles{
+            width: 50vw;
+            height: 50vw;
+            position: absolute;
+            top:calc(50% - 25vw);
+            left: calc(50% - 25vw);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            span{
+              z-index: -1;
+              border: solid 1px rgba($white, .2);
+              border-radius: 100vw;
+              position: absolute;
+              --animate-duration: 3s;
+              &:nth-child(1){
+                width: 8vw;
+                height: 8vw;
+                animation-delay: .1s;
+              }
+              &:nth-child(2){
+                width: 19vw;
+                height: 19vw;
+                animation-delay: .4s;
+              }
+              &:nth-child(3){
+                width: 32vw;
+                height: 32vw;
+                animation-delay: .8s;
+              }
+              &:nth-child(4){
+                width: 46vw;
+                height: 46vw;
+                animation-delay: 1.2s;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

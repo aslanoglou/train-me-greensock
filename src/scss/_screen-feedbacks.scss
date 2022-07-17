@@ -1,0 +1,117 @@
+@keyframes ipnone-horizontal {
+  0%   {opacity: 0; transform: scale(1);}
+  20% {opacity: .8; transform: scale(1);}
+  40% {opacity: .8; transform: scale(1);}
+  100% {opacity: 0; transform: scale(8)}
+}
+.screen-feedbacks{
+  min-height: 100%;
+  overflow: hidden;
+  &__content{
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 1rem;
+    line-height: 1.2;
+    color: $trainme-grey2;
+    &:before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 75%;
+      background-color: rgba($trainme-grey3, .12);
+      border-radius: 40px;
+    }
+    @include media-breakpoint-up(lg){
+      font-size: 1.1875rem  /* 19/16 */;
+    }
+    &__col1{
+      @include media-breakpoint-up(lg){
+        padding-right: 50px;
+      }
+      .text-gradient{
+        font-size: 36px;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+        @include media-breakpoint-up(lg){
+          margin-bottom: 1.5rem;
+          font-size: 54px;
+        }
+      }
+    }
+    &__col2{
+      padding-left:55px;
+      margin-top: 2rem;
+      @include media-breakpoint-up(lg){
+        margin-top: 0;
+        padding-left: 50px;
+        margin-bottom: 0;
+      }
+    }
+    a{
+      margin-top: 3rem;
+      text-decoration: none;
+    }
+  }
+  &__reps{
+    max-width: 110px;
+    margin-left: -60px;
+    @include media-breakpoint-up(md){
+      max-width: 100%;
+      margin-left: -130px;
+      margin-bottom: -50px;
+    }
+  }
+  &__stats{
+    margin-left: auto;
+    transition: ease-in-out all .3s;
+    @include media-breakpoint-up(xxl){
+      margin-right: 80px;
+    }
+  }
+  .iphone-horizontal{
+    position: relative;
+    overflow: hidden;
+    margin-top: -50px;
+    &__message{
+      position: absolute;
+      top:0;
+      left:0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span {
+        color: $white;
+        transform-origin: center center;
+        opacity: 0;
+        font-weight: bold;
+        white-space: nowrap;
+        font-size: clamp(15px, 6vw, 70px);
+      }
+    }
+    &__stats{
+      position: absolute;
+      bottom: 1.3rem;
+      left: 2.5rem;
+      z-index: 1;
+      width: 14%;
+      opacity: .5;
+      transition: ease-in-out all .3s;
+
+    }
+    &.is-active{
+      .iphone-horizontal__stats{
+        opacity: 1;
+      }
+      .iphone-horizontal__message span{
+        animation-name: ipnone-horizontal;
+        animation-duration: 2s;
+      }
+    }
+  }
+
+}

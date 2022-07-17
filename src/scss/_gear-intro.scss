@@ -1,0 +1,44 @@
+.gear-intro{
+  min-height: 100%;
+  padding: .75rem;
+  align-items: flex-start;
+  text-align: left;
+  &__content {
+    margin-top: 60px;
+    border-radius: 40px;
+    width: 100%;
+    height: 75%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    color: $white;
+    font-size: 16px;
+    position: relative;
+    @include media-breakpoint-up(lg) {
+      margin-top: 75px;
+      font-size: 24px;
+    }
+    &:after{
+      content: "";
+      width: 2px;
+      height: 140px;
+      background-color: $green;
+      position: absolute;
+      bottom: -70px;
+      left: calc(50% - 1px);
+    }
+  }
+  &__main-title{
+    font-size: 54px;
+    color: $white;
+    margin-bottom: 1rem;
+    margin-top: 10vh;
+    @include media-breakpoint-only(xs){
+      font-size: 40px;
+    }
+    @include media-breakpoint-up(lg){
+      font-size: 81px;
+    }
+  }
+}

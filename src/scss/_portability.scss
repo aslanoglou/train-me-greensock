@@ -1,0 +1,65 @@
+.portability{
+  min-height: 100%;
+  padding: .75rem;
+  align-items: flex-start;
+  text-align: left;
+  &__content {
+    margin-top: 2rem;
+    width: 100%;
+    height: 75%;
+    color:$trainme-grey2;
+    font-size: 16px;
+    position: relative;
+    @include media-breakpoint-up(sm) {
+      margin-top: 60px;
+    }
+    @include media-breakpoint-up(lg) {
+      margin-top: auto;
+      font-size: 19px;
+    }
+
+  }
+  &__main-title{
+    font-size: 24px;
+    color: $white;
+    margin-bottom: 1rem;
+    @include media-breakpoint-up(sm){
+      margin-top: 10vh;
+    }
+    @include media-breakpoint-up(md){
+      font-size: 32px;
+    }
+    @include media-breakpoint-up(lg){
+      font-size: 54px;
+    }
+  }
+  &__image-area{
+    position: relative;
+    img{
+      z-index: 1;
+      position: relative;
+    }
+    &__shadow {
+      background: rgb(64, 30, 174);
+      background: radial-gradient(circle, rgba(#401EAE, .4) 0%, rgba(#7DBEFF, .4) 35%, rgba(#7DBEFF, 0) 70%);
+      position: absolute;
+      left: calc(50% - 250px);;
+      bottom: calc(50% - 250px);
+      width: 500px;
+      height: 500px;
+      border-radius: 100%;
+      z-index: 0;
+      pointer-events: none;
+      overflow: hidden;
+      transition: ease-in-out all 1s;
+      opacity: 1;
+
+      @include media-breakpoint-up(lg) {
+        width: 700px;
+        height: 700px;
+        left: calc(50% - 350px);
+        bottom: calc(50% - 350px);
+      }
+    }
+  }
+}
